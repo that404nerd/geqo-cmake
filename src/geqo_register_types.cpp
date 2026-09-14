@@ -72,7 +72,7 @@
 #include "tests/test_intersects_area2d.h"
 #include "tests/test_intersects_area3d.h"
 
-#include "register_types.h"
+#include "geqo_register_types.h"
 
 using namespace godot;
 

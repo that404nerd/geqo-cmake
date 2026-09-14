@@ -93,7 +93,7 @@ void GeneratorCircleShape3D::perform_generation(Ref<QueryInstance3D> query_insta
 		Vector3 starting_pos;
 		Node3D *context_ref = nullptr;
 
-		double rotation_offset = -(Math_PI / 2);
+		double rotation_offset = -(M_PI / 2);
 		// TODO: Test if this doesn't crash for edge cases
 		if (contexts[context].get_type() == Variant::VECTOR3)
 			starting_pos = contexts[context];
