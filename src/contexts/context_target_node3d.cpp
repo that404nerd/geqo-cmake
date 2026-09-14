@@ -1,5 +1,10 @@
 #include "contexts/context_target_node3d.h"
 
+void ContextTargetNode3D::_ready()
+{
+	target_node = get_node<Node3D>(target_node_path);
+}
+
 void ContextTargetNode3D::set_target_node_path(NodePath targetPath) {
 	target_node_path = targetPath;
 }

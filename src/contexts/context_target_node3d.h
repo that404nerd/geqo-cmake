@@ -15,6 +15,8 @@ public:
 	ContextTargetNode3D() {}
 	~ContextTargetNode3D() {}
 
+	void _ready() override;
+
 	void set_target_node_path(NodePath targetPath);
 	NodePath get_target_node_path() { return target_node_path; }
 
