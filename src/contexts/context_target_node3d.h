@@ -8,14 +8,14 @@ class ContextTargetNode3D : public QueryContext3D {
 	GDCLASS(ContextTargetNode3D, QueryContext3D)
 
 private:
-	Node3D *target_node = nullptr;
+	NodePath target_node_path;
 
 public:
 	ContextTargetNode3D() {}
 	~ContextTargetNode3D() {}
 
-	void set_target_node(Node3D *target);
-	Node3D *get_target_node() { return target_node; }
+	void set_target_node_path(NodePath targetPath);
+	NodePath get_target_node_path() { return target_node_path; }
 
 	Array get_context(Ref<QueryInstance3D> query_instance) override;
 
