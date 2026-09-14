@@ -9,15 +9,13 @@ class ContextTargetNode3D : public QueryContext3D {
 
 private:
 	Node3D *target_node = nullptr;
-	NodePath target_node_path {};
+	NodePath target_node_path;
 
 public:
 	ContextTargetNode3D() {}
 	~ContextTargetNode3D() {}
 
-	void _ready() override;
-
-	void set_target_node_path(NodePath target);
+	void set_target_node_path(NodePath targetPath);
 	NodePath get_target_node_path() { return target_node_path; }
 
 	Array get_context(Ref<QueryInstance3D> query_instance) override;
